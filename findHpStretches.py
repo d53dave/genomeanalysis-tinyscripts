@@ -55,6 +55,7 @@ def printHelp():
           "after the file name, \"python findHpStretches.py mySeq.fa 8\" would find homopolymers longer or equal to 8bp."
     print "If no value is specified, the a 6bp cutoff will be used for computations."
     print "To print additional information, specify --more or -m"
+    print "To print all found streches to stdout, specify --all or -a"
 
 def main():
     usage = "Usage: %prog [options] arg1 (arg2)\narg1 is expected to be the input file in fasta format"\
