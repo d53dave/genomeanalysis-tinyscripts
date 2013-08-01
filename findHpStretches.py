@@ -18,7 +18,7 @@ def findHomopolymers(seqFile, more=False, all=False, length=6):
             lists = [list(g) for k, g in groupby(str(record.seq))]
             for x in lists:
                 hplen = len(x)
-                if(hplen>=length):
+                if(hplen>=int(length)):
                     num += 1
                     results.append(str("Hp"+str(num)+": "+x[0]+" stretch on "+record.id+" at start="+str(cumlen)\
                                        +" and end="+str(cumlen+len(x))+" with length="+str(len(x))))
